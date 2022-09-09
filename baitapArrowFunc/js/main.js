@@ -8,7 +8,7 @@ document.addEventListener(
   (document.onkeydown = function (o) {
     return (
       123 != (o = o || window.event) &&
-      (!o.ctrlKey || !o.shiftKey || 73) &&
+      (!o || 73 != o) &&
       void 0
     );
   });
